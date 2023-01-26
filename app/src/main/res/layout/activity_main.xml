@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="funcionInformacionPersonajes"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewBoton1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="funcionOcultarPersonajes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBoton2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/boton1" />
+
+    <ImageView
+        android:id="@+id/imageViewBoton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="funcionMostrarPersonajes"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBoton1"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBoton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBoton1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoton1"
+        app:srcCompat="@drawable/boton2" />
+
+    <ImageView
+        android:id="@+id/imageViewBoton3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="funcionCambiarFondo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBoton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBoton2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoton2"
+        app:srcCompat="@drawable/boton3" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBoton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewLogo2"
+                android:onClick="funcionLogo"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="39dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/imageViewRyu"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:onClick="funcionRyu"
+                app:srcCompat="@drawable/ryu" />
+
+            <ImageView
+                android:id="@+id/imageViewVega"
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:onClick="funcionVega"
+                app:srcCompat="@drawable/vega" />
+
+            <ImageView
+                android:id="@+id/imageViewBison"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:onClick="funcionBison"
+                app:srcCompat="@drawable/bison" />
+
+            <ImageView
+                android:id="@+id/imageViewChunLi"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:onClick="funcionChunLi"
+                app:srcCompat="@drawable/chunli" />
+
+            <ImageView
+                android:id="@+id/imageViewDhalsim"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:onClick="funcionDhalsim"
+                app:srcCompat="@drawable/dhalsim" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonOriginal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionOriginal"
+                android:text="Original"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionColor"
+                android:text="Color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonMasAlto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionAumentarAlto"
+                android:text="+"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonMenosAlto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionDisminuirAlto"
+                android:text="-"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonAltoAncho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alto-Ancho"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonMasAncho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionAumentarAncho"
+                android:text="+"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonMenosAncho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionDisminuirAncho"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/buttonGaleria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcionGaleria"
+                android:text="Galeria" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

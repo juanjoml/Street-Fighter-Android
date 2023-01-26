@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vega">
+
+    <ImageView
+        android:id="@+id/imageViewVegaInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:onClick="funcionCerrar"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVegaInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vegainfo" />
+
+    <TextView
+        android:id="@+id/textViewVegaInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Vega creció en una familia noble española. Su posición social, así como la economía de su familia, le llevaron a los ruedos, aprendiendo a torear. También se convirtió en un excelente luchador de artes marciales, en especial al realizar una mezcla de savate, zipota, y del ninjutsu japonés. Además se convirtió en un experto en la lucha en jaula."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewVegaInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

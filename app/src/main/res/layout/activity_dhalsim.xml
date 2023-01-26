@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dhalsim">
+
+    <ImageView
+        android:id="@+id/imageViewDhalsiminfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="funcionCerrar"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDhalsiminfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dhalsiminfo" />
+
+    <TextView
+        android:id="@+id/textViewDhalsiminfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Dhalsim es un maestro de yoga que ha dedicado su vida a alcanzar el equilibrio entre cuerpo y mente, pudiendo realizar movimientos increíbles, como expulsar fuego por la boca, estirar los miembros de su cuerpo, leer mentes o presentir el mal. Su pueblo era muy pobre, por lo que necesitaba ganar dinero para poder salvarlo. Pensó que una forma era el torneo Street Fighter, y aunque iba en contra de sus principios de no herir físicamente a otros, tras mucho meditar, decidió que la lucha era la forma de salvar a su pueblo y así se inscribió en el Street Fighter."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDhalsiminfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

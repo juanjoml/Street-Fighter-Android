@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chunli">
+
+    <ImageView
+        android:id="@+id/imageViewChunliInfo"
+        android:onClick="funcionCerrar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewChunliInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chunliinfo" />
+
+    <TextView
+        android:id="@+id/textViewChunliInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Es una estudiante de Wu-Shu/Kung-Fu, entrenada por el maestro Gen y  por su padre, un agente de la Interpol, quien, cuando era muy pequeña, desapareció en una misión. Desesperada, pidió ayuda al propio maestro Gen, que le dijo que su padre estaba investigando una organización de reciente aparición llamada Shadowlaw. Siguiendo sus indicaciones, se convirtió en una de las mejores agentes de la Interpol, para averiguar qué sucedió con su padre y de ser posible encontrarlo, si aún estaba con vida."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewChunliInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

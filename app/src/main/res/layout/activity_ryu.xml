@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ryu">
+
+    <ImageView
+        android:id="@+id/imageViewRyuInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRyuInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="funcionCerrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ryuinfo" />
+
+    <TextView
+        android:id="@+id/textViewRyuInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ryu dedica su vida a las artes marciales o budō y a la justicia, y muestra un carácter serio, modesto y callado, en contraste con la actitud mostrada por su compañero Ken Masters. Su ataque más característico es el Hadōken, un golpe que concentra la energía y la despide a distancia, cuya velocidad puede variar. Tanto Ryu como Ken practican un arte marcial llamada Ansatsuken."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRyuInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
